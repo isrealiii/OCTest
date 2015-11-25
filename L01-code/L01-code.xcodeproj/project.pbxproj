@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AF7C7FE1C0609790081E16F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C7FD1C0609790081E16F /* main.m */; };
 		1AF7C8061C060BE20081E16F /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C8051C060BE20081E16F /* Fraction.m */; };
+		1AF7C8091C060E860081E16F /* Access.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C8081C060E860081E16F /* Access.m */; };
+		1AF7C80E1C0611BF0081E16F /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C80D1C0611BF0081E16F /* ClassA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		1AF7C7FD1C0609790081E16F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AF7C8041C060BE20081E16F /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		1AF7C8051C060BE20081E16F /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		1AF7C8071C060DE70081E16F /* Access.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Access.h; sourceTree = "<group>"; };
+		1AF7C8081C060E860081E16F /* Access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Access.m; sourceTree = "<group>"; };
+		1AF7C80C1C0611420081E16F /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		1AF7C80D1C0611BF0081E16F /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +66,23 @@
 		1AF7C7FC1C0609790081E16F /* L01-code */ = {
 			isa = PBXGroup;
 			children = (
+				1AF7C80A1C0610970081E16F /* class */,
 				1AF7C8041C060BE20081E16F /* Fraction.h */,
 				1AF7C8051C060BE20081E16F /* Fraction.m */,
 				1AF7C7FD1C0609790081E16F /* main.m */,
+				1AF7C8071C060DE70081E16F /* Access.h */,
+				1AF7C8081C060E860081E16F /* Access.m */,
 			);
 			path = "L01-code";
+			sourceTree = "<group>";
+		};
+		1AF7C80A1C0610970081E16F /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7C80C1C0611420081E16F /* ClassA.h */,
+				1AF7C80D1C0611BF0081E16F /* ClassA.m */,
+			);
+			name = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +143,8 @@
 			files = (
 				1AF7C7FE1C0609790081E16F /* main.m in Sources */,
 				1AF7C8061C060BE20081E16F /* Fraction.m in Sources */,
+				1AF7C80E1C0611BF0081E16F /* ClassA.m in Sources */,
+				1AF7C8091C060E860081E16F /* Access.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

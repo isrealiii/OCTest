@@ -7,12 +7,11 @@
 //
 
 #import "Fraction.h"
-#import <Foundation/Foundation.h>
 
 @implementation Fraction
 
 -(void) print {
-    printf("%i %i", n1, n2);
+    printf("%i %i\n", n1, n2);
 }
 
 -(void) setN1:(int)n {
