@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5AF2111C074B0F0011C848 /* WarningException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AF2101C074B0F0011C848 /* WarningException.m */; };
+		1A5AF2161C074C150011C848 /* Cup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AF2151C074C150011C848 /* Cup.m */; };
+		1A5AF21A1C074E8F0011C848 /* OverflowException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AF2191C074E8F0011C848 /* OverflowException.m */; };
+		1A5AF21C1C074EEB0011C848 /* UnderflowException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AF21B1C074EEB0011C848 /* UnderflowException.m */; };
 		1AF7C7FE1C0609790081E16F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C7FD1C0609790081E16F /* main.m */; };
 		1AF7C8061C060BE20081E16F /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C8051C060BE20081E16F /* Fraction.m */; };
 		1AF7C8091C060E860081E16F /* Access.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7C8081C060E860081E16F /* Access.m */; };
@@ -26,6 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A5AF20F1C074AD00011C848 /* WarningException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WarningException.h; sourceTree = "<group>"; };
+		1A5AF2101C074B0F0011C848 /* WarningException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningException.m; sourceTree = "<group>"; };
+		1A5AF2121C074B4C0011C848 /* Cup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cup.h; sourceTree = "<group>"; };
+		1A5AF2151C074C150011C848 /* Cup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cup.m; sourceTree = "<group>"; };
+		1A5AF2171C074E050011C848 /* OverflowException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverflowException.h; sourceTree = "<group>"; };
+		1A5AF2181C074E4A0011C848 /* UnderflowException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnderflowException.h; sourceTree = "<group>"; };
+		1A5AF2191C074E8F0011C848 /* OverflowException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflowException.m; sourceTree = "<group>"; };
+		1A5AF21B1C074EEB0011C848 /* UnderflowException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderflowException.m; sourceTree = "<group>"; };
 		1AF7C7FA1C0609790081E16F /* L01-code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "L01-code"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF7C7FD1C0609790081E16F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AF7C8041C060BE20081E16F /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
@@ -47,6 +59,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5AF20E1C074AB80011C848 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				1A5AF20F1C074AD00011C848 /* WarningException.h */,
+				1A5AF2101C074B0F0011C848 /* WarningException.m */,
+				1A5AF2121C074B4C0011C848 /* Cup.h */,
+				1A5AF2151C074C150011C848 /* Cup.m */,
+				1A5AF2171C074E050011C848 /* OverflowException.h */,
+				1A5AF2181C074E4A0011C848 /* UnderflowException.h */,
+				1A5AF2191C074E8F0011C848 /* OverflowException.m */,
+				1A5AF21B1C074EEB0011C848 /* UnderflowException.m */,
+			);
+			name = exception;
+			sourceTree = "<group>";
+		};
 		1AF7C7F11C0609790081E16F = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +93,7 @@
 		1AF7C7FC1C0609790081E16F /* L01-code */ = {
 			isa = PBXGroup;
 			children = (
+				1A5AF20E1C074AB80011C848 /* exception */,
 				1AF7C80A1C0610970081E16F /* class */,
 				1AF7C8041C060BE20081E16F /* Fraction.h */,
 				1AF7C8051C060BE20081E16F /* Fraction.m */,
@@ -141,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5AF21A1C074E8F0011C848 /* OverflowException.m in Sources */,
+				1A5AF2161C074C150011C848 /* Cup.m in Sources */,
 				1AF7C7FE1C0609790081E16F /* main.m in Sources */,
 				1AF7C8061C060BE20081E16F /* Fraction.m in Sources */,
+				1A5AF21C1C074EEB0011C848 /* UnderflowException.m in Sources */,
+				1A5AF2111C074B0F0011C848 /* WarningException.m in Sources */,
 				1AF7C80E1C0611BF0081E16F /* ClassA.m in Sources */,
 				1AF7C8091C060E860081E16F /* Access.m in Sources */,
 			);

@@ -10,6 +10,9 @@
 #import "Fraction.h"
 #import "Access.h"
 #import "ClassA.h"
+#import "Cup.h"
+#import "OverflowException.h"
+#import "WarningException.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -56,8 +59,45 @@ int main(int argc, const char * argv[]) {
         ClassA *c1 = [[ClassA alloc] init];
         ClassA *c2 = [[ClassA alloc] init];
         
-        printf("ClassA count: %i\n", [ClassA initCount]);
+//        printf("ClassA count: %i\n", [ClassA initCount]);
         
+        // **********************  Exception  *****************************/
+        
+        Cup *cup = [[Cup alloc] init];
+        
+        int i;
+        
+        for (i = 0; i < 4; i++) {
+            
+            [cup fill];
+            [cup print];
+            
+        }
+        
+        for (i =0; i < 7; i++) {
+            @try {
+                [cup fill];
+            }
+            @catch (WarningException *e) {
+                printf("%s : ", [[e name] cString]);
+            }
+            @catch (OverflowException *e) {
+                printf("%s : ", [[e name] cString]);
+            }
+            @finally {
+                [cup print];
+            }
+        }
+        
+        @try {
+            [cup setLevel: -1];
+        }
+        @catch (NSException *e) {
+            printf("%s : %s\n", [[e name] cString], [[e reason] cString]);
+        }
+        @finally {
+            
+        }
         
         return 0;
     }
